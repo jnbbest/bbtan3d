@@ -4,38 +4,23 @@ using UnityEngine;
 
 public class ObjectRotationScript : MonoBehaviour
 {
-    bool dragEnabled = false;
-	public float rotationSpeed;
-    public float minClamp;
-    public float maxClamp;
-    float canonFrontAngle;
-	
-	
-	void Update()
+	public float rotateSpeed = 20f;
+
+    private void OnMouseDrag()
+    {
+        float rotX = Input.GetAxis("Mouse X") * rotateSpeed * Mathf.Deg2Rad;
+        float rotY = Input.GetAxis("Mouse Y") * rotateSpeed * Mathf.Deg2Rad;
+        //ebug.Log(rotX +" "+ rotY);
+        transform.Rotate(Vector3.up * 100, rotX);
+        
+    }
+
+
+    void Update()
 	{
-		//RotateCanonFront();
-		if (Input.GetMouseButtonUp(0) || Input.GetMouseButtonUp(1))
-		{
-			dragEnabled = false;
-		}
-		if (Input.GetMouseButtonDown(0)|| Input.GetMouseButtonDown(1))
-		{
-			dragEnabled = true;
-		}
-		
-		if (dragEnabled)
-		{
-			RotateCanonFront();
-			
-		}
+	
 	}
 	
-	void RotateCanonFront()
-    {
-        canonFrontAngle += Input.GetAxis("Mouse X") * rotationSpeed * Time.deltaTime;
-
-        canonFrontAngle = Mathf.Clamp(canonFrontAngle, minClamp, maxClamp);
-        transform.localRotation = Quaternion.AngleAxis(canonFrontAngle, Vector3.forward);
-    }
+	
 }
 
