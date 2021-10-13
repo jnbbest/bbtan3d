@@ -5,12 +5,12 @@ using UnityEngine;
 public class ObjectCollection : MonoBehaviour
 {
     public BallThrower ballThrower;
-    public int countholder;
+    
     public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
-        countholder = gameObject.GetComponent<BallThrower>().count;
+       
     }
 
     // Update is called once per frame
