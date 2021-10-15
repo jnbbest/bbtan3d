@@ -13,7 +13,7 @@ public class ObstacleManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        ObsManager();  
     }
 
     // Update is called once per frame
@@ -53,5 +53,27 @@ public class ObstacleManager : MonoBehaviour
             
         
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        foreach (ContactPoint contact in collision.contacts)
+        {
+            if(contact.otherCollider.CompareTag("ball"))
+            {
+                life--;
+                ObsManager();
+
+                if(life <= 0)
+                {
+                    DestroyMe();
+                }
+            }
+        }
+    }
+
+    void DestroyMe()
+    {
+        gameObject.SetActive(false);
+    }
+    
 
 }

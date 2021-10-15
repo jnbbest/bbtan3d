@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BallThrower : MonoBehaviour
 {
-    public float m_throwForce = 10f;
+    
     public GameObject _ball;
     bool throwEnabled = false;
     ObjectPool Opool;
