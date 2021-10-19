@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ball
   - WinPanel
+  - ball_Increaser_1
   layers:
   - Default
   - TransparentFX

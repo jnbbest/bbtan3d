@@ -7,9 +7,10 @@ using TMPro;
 
 public class LevelManager : MonoBehaviour
 {
+    public static LevelManager instance;
     public Text CurrentLevelText;
     private int currentLvl = 1, NextLvl = 2;
-
+    public BallThrower ballthrower;
 
     private void Awake()//
     {
@@ -18,6 +19,7 @@ public class LevelManager : MonoBehaviour
     }
     void Start()
     {
+        instance = this;
         //Levelshowing text setup
         if (PlayerPrefs.GetInt("CurrentLevel") >= 1)//
         {

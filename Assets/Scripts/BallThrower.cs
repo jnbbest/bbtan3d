@@ -48,13 +48,13 @@ public class BallThrower : MonoBehaviour
             count++;    
             yield return wait;
         }
-        ballincreaser++;
+        
 
         if (count > 0)
         {
             player.SetActive(false);
         }
     }
-
+    
 
 }

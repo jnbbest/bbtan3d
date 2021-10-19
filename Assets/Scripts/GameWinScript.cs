@@ -7,6 +7,7 @@ public class GameWinScript : MonoBehaviour
     public GameObject Obstacles, winPanel;
     bool gamewin;
     public LevelManager levelManager;
+    public GameObject ballThrower;
 
     // Start is called before the first frame update
     void Start()
@@ -45,7 +46,7 @@ public class GameWinScript : MonoBehaviour
         else
         {
             Debug.Log(" you won ??!!!!!");
-
+            ballThrower.SetActive(false);
             winPanel.SetActive(true);
         }
     }
@@ -53,6 +54,7 @@ public class GameWinScript : MonoBehaviour
     public void NextLevel()
     {
         StartCoroutine(levelManager.LoadNextLevel());
+
         //levelManager.LoadNextLevel();
     }
 
