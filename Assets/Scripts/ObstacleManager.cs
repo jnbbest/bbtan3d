@@ -19,7 +19,7 @@ public class ObstacleManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        ObsManager();
     }
 
     public void ObsManager()
