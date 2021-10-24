@@ -12,16 +12,19 @@ public class LevelManager : MonoBehaviour
     private int currentLvl = 1, NextLvl = 2;
     public BallThrower ballthrower;
 
+    private int numberOFLevels = 2;
+
     private void Awake()//
     {
         int mainlevel = SceneManager.GetActiveScene().buildIndex;//
-        PlayerPrefs.SetInt("Level", mainlevel);//
+        PlayerPrefs.SetInt("sceneIndex", mainlevel);//
+        Debug.Log("sceneIndex = " +mainlevel);
     }
     void Start()
     {
         instance = this;
         //Levelshowing text setup
-        if (PlayerPrefs.GetInt("CurrentLevel") >= 1)//
+        if (PlayerPrefs.GetInt("CurrentLevel",1) >= 1)//
         {
             CurrentLevelText.text = PlayerPrefs.GetInt("CurrentLevel").ToString();
             currentLvl = PlayerPrefs.GetInt("CurrentLevel");
@@ -44,7 +47,7 @@ public class LevelManager : MonoBehaviour
 
         //YCManager.instance.OnGameStarted(currentLvl);
 
-        if (SceneManager.GetActiveScene().buildIndex >= 3)
+        if (SceneManager.GetActiveScene().buildIndex >= numberOFLevels)
         {
             SceneManager.LoadScene(1);
         }

@@ -31,7 +31,7 @@ public class GameWinScript : MonoBehaviour
             if (Obstacles.transform.GetChild(i).gameObject.activeInHierarchy)
             {
 
-                Debug.Log(" h active");
+                //Debug.Log(" h active");
                 gamewin = false;
 
             }
