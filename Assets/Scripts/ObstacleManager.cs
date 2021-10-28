@@ -9,6 +9,8 @@ public class ObstacleManager : MonoBehaviour
     public TextMeshPro[] textElements;
     public Material[] color;
     
+    
+    
 
     // Start is called before the first frame update
     void Start()
@@ -59,14 +61,19 @@ public class ObstacleManager : MonoBehaviour
         {
             if(contact.otherCollider.CompareTag("ball"))
             {
-                life--;
+                //life--;
+                ball b = contact.otherCollider.GetComponent<ball>();
+                life -= b.ballPower;
                 ObsManager();
 
-                if(life <= 0)
+                if(life <= 0 || b.powerBall)
                 {
                     DestroyMe();
                 }
+                
             }
+            
+
         }
     }
 

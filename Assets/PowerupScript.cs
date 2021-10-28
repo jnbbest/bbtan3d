@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PowerupScript : MonoBehaviour
 {
-    
+    public GameObject Obstacles;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +29,7 @@ public class PowerupScript : MonoBehaviour
                     DestroyMe();
                
             }
+            
         }
     }
 

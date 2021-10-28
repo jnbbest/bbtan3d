@@ -13,6 +13,7 @@ public class BallThrower : MonoBehaviour
     public int count;
     public int ballincreaser = 4;
     public GameObject player;
+    public GameObject Obstacles;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,8 +45,15 @@ public class BallThrower : MonoBehaviour
         WaitForSeconds wait = new WaitForSeconds(.1f);
         for (int i = 0; i < ballincreaser; i++)
         {
-            Opool.PickFromPool(firepoint.position, objectVec);
-            count++;    
+            //Debug.Log("for loop");
+           GameObject temp =  Opool.PickFromPool(firepoint.position, objectVec);
+            count++;
+            Debug.Log("child count" + " " + Obstacles.transform.childCount);
+            if(GetObstacleCount() <= 3)
+            {
+                temp.GetComponent<ball>().powerBall = true;
+            }
+           //Debug.Log(count +" "+ ballincreaser);
             yield return wait;
         }
         
@@ -55,6 +63,19 @@ public class BallThrower : MonoBehaviour
             player.SetActive(false);
         }
     }
-    
+    private int GetObstacleCount()
+    {
+        int count = 0;
+        for (int i = 0; i < Obstacles.transform.childCount; i++)
+        {
+            if (Obstacles.transform.GetChild(i).gameObject.activeInHierarchy)
+            {
+                count++;
+                
+            }
+
+        }
+        return count;
+    }
 
 }

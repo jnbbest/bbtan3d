@@ -29,16 +29,17 @@ public class ObjectPool : MonoBehaviour
         }
     }
 
-    public void PickFromPool(Vector3 position, Vector3 velocity)
+    public GameObject PickFromPool(Vector3 position, Vector3 velocity)
     {
         //prevent errors
-        if (availableObjects.Count < 1) return;
+        if (availableObjects.Count < 1) return null;
 
         // Activate the Object
         availableObjects[0].Activate(position, velocity);
-
+        GameObject temp = availableObjects[0].gameObject;
         //pop it from the list
         availableObjects.RemoveAt(0);
+        return temp;
     }
 
     public void AddtoPool(Object Object)

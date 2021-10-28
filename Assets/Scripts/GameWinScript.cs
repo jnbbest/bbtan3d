@@ -8,6 +8,7 @@ public class GameWinScript : MonoBehaviour
     bool gamewin;
     public LevelManager levelManager;
     public GameObject ballThrower;
+     
 
     // Start is called before the first frame update
     void Start()
@@ -30,22 +31,22 @@ public class GameWinScript : MonoBehaviour
         {
             if (Obstacles.transform.GetChild(i).gameObject.activeInHierarchy)
             {
-
-                //Debug.Log(" h active");
                 gamewin = false;
+                
 
             }
 
         }
-    
+        
+        
 
         if (gamewin == false)
         {
-            Debug.Log(" still left");
+            //Debug.Log(" still left");
         }
         else
         {
-            Debug.Log(" you won ??!!!!!");
+            //Debug.Log(" you won ??!!!!!");
             ballThrower.SetActive(false);
             winPanel.SetActive(true);
         }
