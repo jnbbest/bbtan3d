@@ -132,7 +132,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 171211632}
-  - component: {fileID: 171211631}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -140,19 +139,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &171211631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 171211630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a168f40cd6697534c90039868e6cc57b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CurrentLevelText: {fileID: 906982631}
 --- !u!4 &171211632
 Transform:
   m_ObjectHideFlags: 0
