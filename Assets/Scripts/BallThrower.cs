@@ -14,6 +14,7 @@ public class BallThrower : MonoBehaviour
     public int ballincreaser = 4;
     public GameObject player;
     public GameObject Obstacles;
+    public int  obscountcompare = 3;
     // Start is called before the first frame update
     void Start()
     {
@@ -49,7 +50,7 @@ public class BallThrower : MonoBehaviour
            GameObject temp =  Opool.PickFromPool(firepoint.position, objectVec);
             count++;
             Debug.Log("child count" + " " + Obstacles.transform.childCount);
-            if(GetObstacleCount() <= 3)
+            if(GetObstacleCount() <= obscountcompare)
             {
                 temp.GetComponent<ball>().powerBall = true;
             }

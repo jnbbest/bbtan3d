@@ -509,12 +509,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
       propertyPath: life
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
       propertyPath: Obstacles
       value: 
       objectReference: {fileID: 429887721}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.data[6]
+      value: 
+      objectReference: {fileID: 2100000, guid: a36628fd9e4e1394194fe61c0a8e54ad, type: 2}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.data[7]
+      value: 
+      objectReference: {fileID: 2100000, guid: dc25e46b8fe30164dbafb7c0f9fd19af, type: 2}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.data[8]
+      value: 
+      objectReference: {fileID: 2100000, guid: d0b88e279c7c6a74484ea0b33eaeb5fb, type: 2}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.data[9]
+      value: 
+      objectReference: {fileID: 2100000, guid: c13960b08c8e9b14ab2d9ebc3588952c, type: 2}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.data[10]
+      value: 
+      objectReference: {fileID: 2100000, guid: 95d2e039a0e5ac349b921bc21883e084, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
 --- !u!1 &120956272
@@ -1791,9 +1815,37 @@ PrefabInstance:
       value: Obstacle_5
       objectReference: {fileID: 0}
     - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: life
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
       propertyPath: Obstacles
       value: 
       objectReference: {fileID: 429887721}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.data[6]
+      value: 
+      objectReference: {fileID: 2100000, guid: a36628fd9e4e1394194fe61c0a8e54ad, type: 2}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.data[7]
+      value: 
+      objectReference: {fileID: 2100000, guid: dc25e46b8fe30164dbafb7c0f9fd19af, type: 2}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.data[8]
+      value: 
+      objectReference: {fileID: 2100000, guid: d0b88e279c7c6a74484ea0b33eaeb5fb, type: 2}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.data[9]
+      value: 
+      objectReference: {fileID: 2100000, guid: c13960b08c8e9b14ab2d9ebc3588952c, type: 2}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.data[10]
+      value: 
+      objectReference: {fileID: 2100000, guid: 95d2e039a0e5ac349b921bc21883e084, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
 --- !u!23 &936015260 stripped
@@ -2274,6 +2326,7 @@ GameObject:
   - component: {fileID: 1556185398}
   - component: {fileID: 1556185397}
   - component: {fileID: 1556185396}
+  - component: {fileID: 1556185399}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2320,7 +2373,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -2377,8 +2430,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 1a6c127b06258f046880d9c3af21eb59, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2395,6 +2448,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1556185394}
   m_CullTransparentMesh: 1
+--- !u!95 &1556185399
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556185394}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 522c1db9070527f4cb07f7e6152a396a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!23 &1621619063 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 2344894988751658664, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
@@ -2913,9 +2985,37 @@ PrefabInstance:
       value: Obstacle_2
       objectReference: {fileID: 0}
     - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: life
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
       propertyPath: Obstacles
       value: 
       objectReference: {fileID: 429887721}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.data[6]
+      value: 
+      objectReference: {fileID: 2100000, guid: a36628fd9e4e1394194fe61c0a8e54ad, type: 2}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.data[7]
+      value: 
+      objectReference: {fileID: 2100000, guid: dc25e46b8fe30164dbafb7c0f9fd19af, type: 2}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.data[8]
+      value: 
+      objectReference: {fileID: 2100000, guid: d0b88e279c7c6a74484ea0b33eaeb5fb, type: 2}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.data[9]
+      value: 
+      objectReference: {fileID: 2100000, guid: c13960b08c8e9b14ab2d9ebc3588952c, type: 2}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.data[10]
+      value: 
+      objectReference: {fileID: 2100000, guid: 95d2e039a0e5ac349b921bc21883e084, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
 --- !u!1001 &1876096893
@@ -3270,9 +3370,37 @@ PrefabInstance:
       value: Obstacle_4
       objectReference: {fileID: 0}
     - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: life
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
       propertyPath: Obstacles
       value: 
       objectReference: {fileID: 429887721}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.data[6]
+      value: 
+      objectReference: {fileID: 2100000, guid: a36628fd9e4e1394194fe61c0a8e54ad, type: 2}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.data[7]
+      value: 
+      objectReference: {fileID: 2100000, guid: dc25e46b8fe30164dbafb7c0f9fd19af, type: 2}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.data[8]
+      value: 
+      objectReference: {fileID: 2100000, guid: d0b88e279c7c6a74484ea0b33eaeb5fb, type: 2}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.data[9]
+      value: 
+      objectReference: {fileID: 2100000, guid: c13960b08c8e9b14ab2d9ebc3588952c, type: 2}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.data[10]
+      value: 
+      objectReference: {fileID: 2100000, guid: 95d2e039a0e5ac349b921bc21883e084, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
 --- !u!1 &1945638171
@@ -3668,9 +3796,37 @@ PrefabInstance:
       value: Obstacle_1
       objectReference: {fileID: 0}
     - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: life
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
       propertyPath: Obstacles
       value: 
       objectReference: {fileID: 429887721}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.data[6]
+      value: 
+      objectReference: {fileID: 2100000, guid: a36628fd9e4e1394194fe61c0a8e54ad, type: 2}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.data[7]
+      value: 
+      objectReference: {fileID: 2100000, guid: dc25e46b8fe30164dbafb7c0f9fd19af, type: 2}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.data[8]
+      value: 
+      objectReference: {fileID: 2100000, guid: d0b88e279c7c6a74484ea0b33eaeb5fb, type: 2}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.data[9]
+      value: 
+      objectReference: {fileID: 2100000, guid: c13960b08c8e9b14ab2d9ebc3588952c, type: 2}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.data[10]
+      value: 
+      objectReference: {fileID: 2100000, guid: 95d2e039a0e5ac349b921bc21883e084, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
 --- !u!1 &2033055020
@@ -3723,6 +3879,7 @@ MonoBehaviour:
   ballincreaser: 4
   player: {fileID: 1240200888}
   Obstacles: {fileID: 429887721}
+  obscountcompare: 3
 --- !u!23 &2082476937 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 2344894989543510350, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
@@ -4459,9 +4616,37 @@ PrefabInstance:
       value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: life
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
       propertyPath: Obstacles
       value: 
       objectReference: {fileID: 429887721}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.data[6]
+      value: 
+      objectReference: {fileID: 2100000, guid: a36628fd9e4e1394194fe61c0a8e54ad, type: 2}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.data[7]
+      value: 
+      objectReference: {fileID: 2100000, guid: dc25e46b8fe30164dbafb7c0f9fd19af, type: 2}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.data[8]
+      value: 
+      objectReference: {fileID: 2100000, guid: d0b88e279c7c6a74484ea0b33eaeb5fb, type: 2}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.data[9]
+      value: 
+      objectReference: {fileID: 2100000, guid: c13960b08c8e9b14ab2d9ebc3588952c, type: 2}
+    - target: {fileID: 5697435089720589229, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: color.Array.data[10]
+      value: 
+      objectReference: {fileID: 2100000, guid: 95d2e039a0e5ac349b921bc21883e084, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
 --- !u!23 &4697232704254426578 stripped
