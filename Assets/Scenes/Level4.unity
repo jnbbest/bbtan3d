@@ -991,7 +991,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 473348353}
         m_TargetAssemblyTypeName: GameWinScript, Assembly-CSharp
         m_MethodName: NextLevel
         m_Mode: 1

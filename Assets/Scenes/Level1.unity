@@ -170,8 +170,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.10721171, y: 9.486045, z: 9.789528}
-  m_Center: {x: 0.44639328, y: 4.24302, z: -1.7468312}
+  m_Size: {x: 4.1420608, y: 17.429865, z: 9.789529}
+  m_Center: {x: 2.4638193, y: 8.214924, z: -1.7468309}
 --- !u!1001 &85572313
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -503,6 +503,10 @@ PrefabInstance:
       propertyPath: m_Size.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3291597370272191439, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: cd5484b053623804baa6e6c8ed56c68f, type: 2}
     - target: {fileID: 5166180842994064865, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
       propertyPath: m_Name
       value: Obstacle_3
@@ -583,8 +587,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.3414412, y: 9.486045, z: 9.202896}
-  m_Center: {x: -0.17072064, y: 4.24302, z: -2.7666752}
+  m_Size: {x: 1.3414413, y: 9.486045, z: 12.5152645}
+  m_Center: {x: -0.17072065, y: 4.24302, z: -1.3398597}
 --- !u!1 &201789185
 GameObject:
   m_ObjectHideFlags: 0
@@ -1794,6 +1798,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3291597370272191439, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: cd5484b053623804baa6e6c8ed56c68f, type: 2}
     - target: {fileID: 5166180842994064865, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
       propertyPath: m_Name
       value: Obstacle_5
@@ -1964,8 +1972,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.3414412, y: 9.486045, z: 9.331379}
-  m_Center: {x: -0.17072064, y: 4.24302, z: -2.8309145}
+  m_Size: {x: 1.3414413, y: 9.486045, z: 18.7797}
+  m_Center: {x: -0.17072065, y: 4.24302, z: 1.8932401}
 --- !u!23 &1118884583 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 2344894988713043376, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
@@ -2944,6 +2952,10 @@ PrefabInstance:
       propertyPath: m_Size.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3291597370272191439, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: cd5484b053623804baa6e6c8ed56c68f, type: 2}
     - target: {fileID: 5166180842994064865, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
       propertyPath: m_Name
       value: Obstacle_2
@@ -3329,6 +3341,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3291597370272191439, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: cd5484b053623804baa6e6c8ed56c68f, type: 2}
     - target: {fileID: 5166180842994064865, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
       propertyPath: m_Name
       value: Obstacle_4
@@ -3755,6 +3771,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3291597370272191439, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: cd5484b053623804baa6e6c8ed56c68f, type: 2}
     - target: {fileID: 5166180842994064865, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
       propertyPath: m_Name
       value: Obstacle_1
@@ -3890,6 +3910,10 @@ PrefabInstance:
       propertyPath: m_Size.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5827847563721044945, guid: e707a5bb481262b42ba78017b1683536, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: cd5484b053623804baa6e6c8ed56c68f, type: 2}
     - target: {fileID: 6756538210988159314, guid: e707a5bb481262b42ba78017b1683536, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 1.032
@@ -4575,6 +4599,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3291597370272191439, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: cd5484b053623804baa6e6c8ed56c68f, type: 2}
     - target: {fileID: 5166180842994064865, guid: f820ff59bd4842742a59564665d3d36e, type: 3}
       propertyPath: m_Name
       value: Obstacle

@@ -12,7 +12,7 @@ public class LevelManager : MonoBehaviour
     private int currentLvl = 1, NextLvl = 2;
     public BallThrower ballthrower;
 
-    private int numberOFLevels = 3;
+    private int numberOFLevels = 5;
 
     private void Awake()//
     {
