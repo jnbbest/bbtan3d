@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameWinScript : MonoBehaviour
 {
-    public GameObject Obstacles, winPanel;
+    public GameObject Obstacles, winPanel,levelshow,Clevel;
     bool gamewin;
     public LevelManager levelManager;
     public GameObject ballThrower;
@@ -43,12 +43,15 @@ public class GameWinScript : MonoBehaviour
         if (gamewin == false)
         {
             //Debug.Log(" still left");
+            levelshow.SetActive(true);
         }
         else
         {
             //Debug.Log(" you won ??!!!!!");
             ballThrower.SetActive(false);
             winPanel.SetActive(true);
+            levelshow.SetActive(false);
+            Clevel.SetActive(false);
         }
     }
 
