@@ -27,7 +27,7 @@ public class LevelManager : MonoBehaviour
         if (PlayerPrefs.GetInt("CurrentLevel",1) >= 1)//
         {
             CurrentLevelText.text = PlayerPrefs.GetInt("CurrentLevel").ToString();
-            currentLvl = PlayerPrefs.GetInt("CurrentLevel");
+            currentLvl = PlayerPrefs.GetInt("CurrentLevel",1);
         }
         else//
         {
