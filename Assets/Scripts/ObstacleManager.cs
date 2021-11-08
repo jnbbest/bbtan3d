@@ -7,7 +7,7 @@ public class ObstacleManager : MonoBehaviour
 {
     public float life;
     public TextMeshPro[] textElements;
-    public Material[] color;
+   // public Material[] color;
     
     
     
@@ -26,7 +26,7 @@ public class ObstacleManager : MonoBehaviour
 
     public void ObsManager()
     {
-        ColorChange();
+        //ColorChange();
         TextChange();
     }
 
@@ -40,21 +40,21 @@ public class ObstacleManager : MonoBehaviour
         
     }
 
-    private void ColorChange()
-    {
-         if(color.Length * 10 >= life)
-        {
-            GetComponent<MeshRenderer>().material = color[(int)(life / 10)];
-        }
-        else
-        {
-            GetComponent<MeshRenderer>().material = color[(color.Length - 1)];
-        }
+    //private void ColorChange()
+    //{
+    //     if(color.Length * 10 >= life)
+    //    {
+    //        GetComponent<MeshRenderer>().material = color[(int)(life / 10)];
+    //    }
+    //    else
+    //    {
+    //        GetComponent<MeshRenderer>().material = color[(color.Length - 1)];
+    //    }
          
         
             
         
-    }
+    //}
     private void OnCollisionEnter(Collision collision)
     {
         foreach (ContactPoint contact in collision.contacts)
