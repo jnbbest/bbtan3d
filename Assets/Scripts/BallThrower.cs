@@ -59,10 +59,7 @@ public class BallThrower : MonoBehaviour
         }
         
 
-        if (count > 0)
-        {
-            player.SetActive(false);
-        }
+        
     }
     private int GetObstacleCount()
     {
