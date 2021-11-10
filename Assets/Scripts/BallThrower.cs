@@ -15,6 +15,7 @@ public class BallThrower : MonoBehaviour
     public GameObject player;
     public GameObject Obstacles;
     public int  obscountcompare = 3;
+    private float throwTimer = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,20 +27,31 @@ public class BallThrower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (count <=0 && Input.GetMouseButtonUp(0) || Input.GetMouseButtonUp(1) )
-        {
-            throwEnabled = true;
-            StartCoroutine(throwballs());
-        }
-        if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
+        if (count <=0 && Input.GetMouseButtonUp(1) )
         {
             throwEnabled = false;
             
         }
+        if ( Input.GetMouseButton(0))
+        {
+            throwEnabled = true;
+
+            throwTimer += Time.deltaTime;
+            if(throwTimer > 0.1f)
+            {
+                throwTimer = 0;
+                Vector3 objectVec = transform.forward * firepower;
+                GameObject temp = Opool.PickFromPool(firepoint.position, objectVec);
+            }
+           
+        }
         
     }
 
-    private IEnumerator throwballs ()
+    
+
+
+    private IEnumerator throwballs()
     {
         Vector3 objectVec = transform.forward * firepower;
         count = 0;
@@ -47,19 +59,19 @@ public class BallThrower : MonoBehaviour
         for (int i = 0; i < ballincreaser; i++)
         {
             //Debug.Log("for loop");
-           GameObject temp =  Opool.PickFromPool(firepoint.position, objectVec);
+            GameObject temp = Opool.PickFromPool(firepoint.position, objectVec);
             count++;
             Debug.Log("child count" + " " + Obstacles.transform.childCount);
-            if(GetObstacleCount() <= obscountcompare)
+            if (GetObstacleCount() <= obscountcompare)
             {
                 temp.GetComponent<ball>().powerBall = true;
             }
-           //Debug.Log(count +" "+ ballincreaser);
+            //Debug.Log(count +" "+ ballincreaser);
             yield return wait;
         }
-        
 
-        
+
+
     }
     private int GetObstacleCount()
     {

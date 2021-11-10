@@ -7,7 +7,9 @@ public class ObstacleManager : MonoBehaviour
 {
     public float life;
     public TextMeshPro[] textElements;
-   // public Material[] color;
+    // public Material[] color;
+    public GameObject smokeExplode;
+    public GameObject lightning;
     
     
     
@@ -57,10 +59,13 @@ public class ObstacleManager : MonoBehaviour
     //}
     private void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("oncollisionEnter");
         foreach (ContactPoint contact in collision.contacts)
         {
+            Debug.Log("foreach call");
             if(contact.otherCollider.CompareTag("ball"))
             {
+                Debug.Log("if called");
                 //life--;
                 ball b = contact.otherCollider.GetComponent<ball>();
                 life -= b.ballPower;
@@ -79,7 +84,18 @@ public class ObstacleManager : MonoBehaviour
 
     void DestroyMe()
     {
+        StartCoroutine(StartLightning());
+        
+    }
+
+    private IEnumerator StartLightning()
+    {
+        Instantiate(lightning ,transform.position, Quaternion.identity);
+        WaitForSeconds wait = new WaitForSeconds(.2f);
+        yield return wait;
+        Instantiate(smokeExplode, transform.position, Quaternion.identity);
         gameObject.SetActive(false);
+
     }
     
 

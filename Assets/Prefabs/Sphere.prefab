@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 3907055552683947095}
   - component: {fileID: 8884200143988118152}
   - component: {fileID: -848175492393878672}
-  - component: {fileID: 2271517845964967923}
-  - component: {fileID: 3112735621528855712}
+  - component: {fileID: 9182923921281117428}
+  - component: {fileID: 2895578759609077929}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: ball
@@ -123,11 +123,11 @@ ConstantForce:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3994197559322519666}
   m_Enabled: 1
-  m_Force: {x: 0, y: 0, z: -10}
+  m_Force: {x: 0, y: 0, z: -2}
   m_RelativeForce: {x: 0, y: 0, z: 0}
   m_Torque: {x: 0, y: 0, z: 0}
   m_RelativeTorque: {x: 0, y: 0, z: 0}
---- !u!114 &2271517845964967923
+--- !u!114 &9182923921281117428
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rbody: {fileID: 8884200143988118152}
   LifeTime: 3
---- !u!114 &3112735621528855712
+--- !u!114 &2895578759609077929
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

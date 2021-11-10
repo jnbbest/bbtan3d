@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 1750571105357291994}
   - component: {fileID: 3989999235720377431}
   - component: {fileID: 8601689032603697025}
-  - component: {fileID: -8459612007522178834}
+  - component: {fileID: 265554597}
   m_Layer: 0
   m_Name: new_obstacle
   m_TagString: Untagged
@@ -199,7 +199,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1809904517136927886}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -14.0058365, y: 38.17, z: 13.037}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children:
@@ -300,6 +300,8 @@ MonoBehaviour:
   - {fileID: 8957230299043387396}
   - {fileID: 2229309773645272757}
   - {fileID: 2087943424997766053}
+  smokeExplode: {fileID: 153256, guid: fe394d041df1a0547990f49cf653249f, type: 3}
+  lightning: {fileID: 167788, guid: 76d4aad90bac27a4588a3efc2f93d6f2, type: 3}
 --- !u!65 &8601689032603697025
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -313,7 +315,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.999998, y: 0.999998, z: 1.000002}
   m_Center: {x: 0.000000044703484, y: 0.499999, z: 0.00000011920929}
---- !u!54 &-8459612007522178834
+--- !u!54 &265554597
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

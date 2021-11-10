@@ -19,7 +19,7 @@ public class Object : MonoBehaviour
         gameObject.SetActive(true);
 
         // Start decay coroutine
-        //StartCoroutine("Decay");
+        StartCoroutine("Decay");
 
     }
 
@@ -42,13 +42,5 @@ public class Object : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public void OnTriggerEnter(Collider other)
-    {
-        //Here is where you'd put the code to handle bullet hits
-        Debug.Log("Object touch kiya yaayie");
-
-        //after hitting anything just deactivate the bullet
-        Deactivate();
-
-    }
+    
 }
