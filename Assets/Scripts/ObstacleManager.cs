@@ -59,13 +59,13 @@ public class ObstacleManager : MonoBehaviour
     //}
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("oncollisionEnter");
+        
         foreach (ContactPoint contact in collision.contacts)
         {
-            Debug.Log("foreach call");
+           
             if(contact.otherCollider.CompareTag("ball"))
             {
-                Debug.Log("if called");
+                
                 //life--;
                 ball b = contact.otherCollider.GetComponent<ball>();
                 life -= b.ballPower;

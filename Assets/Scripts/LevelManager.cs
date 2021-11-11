@@ -11,18 +11,20 @@ public class LevelManager : MonoBehaviour
     public Text CurrentLevelText;
     private int currentLvl = 1, NextLvl = 2;
     public BallThrower ballthrower;
-
-    private int numberOFLevels = 5;
+    
+    [HideInInspector]
+    public int numberOFLevels = 5;
 
     private void Awake()//
     {
+        instance = this;
         int mainlevel = SceneManager.GetActiveScene().buildIndex;//
         PlayerPrefs.SetInt("sceneIndex", mainlevel);//
         Debug.Log("sceneIndex = " +mainlevel);
     }
     void Start()
     {
-        instance = this;
+        
         //Levelshowing text setup
         if (PlayerPrefs.GetInt("CurrentLevel",1) >= 1)//
         {
