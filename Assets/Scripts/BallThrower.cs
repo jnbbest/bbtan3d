@@ -16,6 +16,7 @@ public class BallThrower : MonoBehaviour
     public GameObject Obstacles;
     public int  obscountcompare = 3;
     private float throwTimer = 0;
+   // public GameObject gunfire;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +42,7 @@ public class BallThrower : MonoBehaviour
             {
                 throwTimer = 0;
                 Vector3 objectVec = transform.forward * firepower;
+               // Instantiate(gunfire, transform.position, Quaternion.identity);
                 GameObject temp = Opool.PickFromPool(firepoint.position, objectVec);
             }
            

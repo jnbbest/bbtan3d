@@ -69,6 +69,7 @@ public class ObstacleManager : MonoBehaviour
                 //life--;
                 ball b = contact.otherCollider.GetComponent<ball>();
                 life -= b.ballPower;
+                Instantiate(lightning, transform.position, Quaternion.identity);
                 ObsManager();
 
                 if(life <= 0 || b.powerBall)
@@ -90,10 +91,10 @@ public class ObstacleManager : MonoBehaviour
 
     private IEnumerator StartLightning()
     {
-        Instantiate(lightning ,transform.position, Quaternion.identity);
+        Instantiate(smokeExplode, transform.position, Quaternion.identity);
         WaitForSeconds wait = new WaitForSeconds(.2f);
         yield return wait;
-        Instantiate(smokeExplode, transform.position, Quaternion.identity);
+        
         gameObject.SetActive(false);
 
     }
